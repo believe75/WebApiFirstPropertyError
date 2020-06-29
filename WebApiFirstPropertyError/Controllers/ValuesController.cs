@@ -11,10 +11,13 @@ namespace WebApiFirstPropertyError.Controllers
     {
         // GET api/values
         [HttpPost]
+        [ValidationActionFilter]
         public string Get(ParameterFill param)
         {
             //param.AccountToken = "adadd";
 
+
+            var modelState = ModelState.IsValid;
 
             return "";
         }
