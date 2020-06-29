@@ -13,6 +13,9 @@ namespace WebApiFirstPropertyError.Controllers
         [HttpPost]
         public string Get(ParameterFill param)
         {
+            param.AccountToken = "adadd";
+
+
             return "";
         }
     
